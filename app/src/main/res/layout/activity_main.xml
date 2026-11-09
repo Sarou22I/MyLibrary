@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- את הרכיבים שלכם מוסיפים כאן, בין שתי התגיות -->
+<TextView
+    android:id="@+id/tvTitle"
+    android:layout_width="match_parent"
+    android:layout_height="28sp"
+    android:text="My MYbrary"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/etBook"
+        android:hint="BOOK NAME"
+        android:inputType="text"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/etAuthor"
+        android:hint="Authors name"
+        android:inputType="text"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/etPages"
+        android:hint="Book pages"
+        android:inputType="number"
+        android:maxLength="4"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/btnSave"
+        android:text="Save to Cloud"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Load from Cloud"
+        android:id="@+id/btnLoad"
+        />
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="18sp"
+        android:text="Nothing has been saved"
+        android:textAlignment="center"
+        />
+
+
+
+</LinearLayout>
